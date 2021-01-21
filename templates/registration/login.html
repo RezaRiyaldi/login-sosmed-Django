@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Login</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+    <br>
+    <p><strong>-- OR --</strong></p>
+    <a href=" {% url 'social:begin' 'google-oauth2' %} ">Login with Google</a><br>
+    <a href=" {% url 'social:begin' 'github' %} ">Login with Github</a><br>
+    <a href=" {% url 'social:begin' 'facebook' %} ">Login with Facebook</a><br>
+{% endblock content %}
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aspernatur aliquam qui quia eaque soluta magnam corrupti, saepe repellat, vel rerum temporibus sint iure doloremque nobis inventore ex officiis dignissimos molestiae nostrum sit a. Saepe, ratione sunt cumque odit nostrum nihil doloremque porro maxime perspiciatis, reiciendis laborum modi dignissimos consequatur sapiente est, quos iure? Harum animi, voluptas sit debitis nulla voluptatem totam. Quaerat suscipit eveniet, omnis asperiores laborum tenetur! At illo commodi, aut repellat quae impedit veniam hic amet ad explicabo odit dolorem quibusdam fuga, asperiores perferendis dolor doloremque architecto alias deleniti minima aliquam eveniet saepe animi sit. Vero, asperiores!
+    
